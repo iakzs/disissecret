@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirector</title>
+    <script>
+        function redirect() {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.toString() === 'forreal=true') {
+                window.location.href = 'https://iakzs.carrd.co/';
+            } else {
+                const targetUrl = 'https://iakzs.dev/alettertoyou/?text=hello%20cool%20user%2C%20you%20forgot%20to%20add%20%3Fforreal%3Dtrue%20to%20iakzs.dev%2Fdisissecret&emoji=😱&color=%23ffffff&background=%23ff0000&background2=%23ff7b00&title=hello&israinbow=false&font=Roboto&size=&weight=normal&align=left&image=&animation=none';
+                window.location.href = targetUrl;
+            }
+        }
+    </script>
+</head>
+<body onload="redirect()">
+    <p>Redirecting... hehehe</p>
+</body>
+</html>
